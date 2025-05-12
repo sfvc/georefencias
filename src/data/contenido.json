@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "logo": "/html.svg",
+      "titulo": "Default",
+      "descripcion": "Description of content 1.",
+      "items": [
+        {
+          "logo": "/html.svg",
+          "titulo": "hola"
+        },
+        {
+          "logo": "/html.svg",
+          "titulo": "item 2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "logo": "/ejemplo.svg",
+      "titulo": "Content 2 Title",
+      "descripcion": "Description of content 2."
+    }
+]

@@ -1,0 +1,31 @@
+.MapaHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 10px auto;
+    width: 75dvw;
+    height: 36px;
+    padding: 6px;
+  }
+  
+  @media (max-width: 1024px) {
+    .MapaHeader {
+      width: 90dvw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .MapaHeader {
+      width: 100%;
+    }
+  }
+  
+  .MapaHeader__img {
+    max-height: 34px;
+    max-width: auto; /* Note: 'auto' is the default and optional here */
+    min-width: 42px;
+    
+  }
+  

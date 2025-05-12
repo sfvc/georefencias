@@ -1,0 +1,87 @@
+.MapaMain {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -25%) !important;
+    height: auto;
+    width: 75dvw;
+    border: 1px solid white;
+    background-color: #f0f0f0e8;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+    /* Scrollbar styles - Webkit (Chrome, Edge, Safari) */
+  }
+  
+  .MapaMain::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .MapaMain::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+  }
+  
+  .MapaMain::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .MapaMain::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .MapaMain::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  /* Scrollbar styles - Firefox */
+  .MapaMain {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+  
+  .MapaMain:hover {
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+  }
+  
+  .MapaMain__figure {
+    text-align: center;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .MapaMain__img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .MapaMain__div {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    overflow-y: auto;
+  }
+  
+  figure figcaption {
+    border: none;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  

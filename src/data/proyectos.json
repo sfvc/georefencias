@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "logo": "/ejemplo.svg",
+    "nombre": "sfvc",
+    "url": "/",
+    "descripcion": "Este es un proyecto sobre movilidad en bicicleta."
+  },
+  {
+    "id": 1,
+    "logo": "/html.svg",
+    "nombre": "Vamos en Bici",
+    "url": "/mapa/1",
+    "descripcion": "Este es un proyecto sobre movilidad en bicicleta."
+  },
+  {
+    "id": 2,
+    "logo": "/ejemplo2.svg",
+    "nombre": "Nodo",
+    "url": "/mapa/2",
+    "descripcion": "Este proyecto trata sobre la conectividad en redes."
+  }
+]

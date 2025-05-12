@@ -1,0 +1,20 @@
+[
+  {
+    "id": "catamarca",
+    "logo": "/logos/catamarca.png",
+    "puntos": [
+      { "nombre": "Plaza 25 de Mayo", "coords": [-28.4695, -65.7852] },
+      { "nombre": "Catedral Basílica", "coords": [-28.4699, -65.7813] },
+      { "nombre": "Parque Adán Quiroga", "coords": [-28.4541, -65.7723] }
+    ]
+  },
+  {
+    "id": "cordoba",
+    "logo": "/logos/cordoba.png",
+    "puntos": [
+      { "nombre": "Plaza San Martín", "coords": [-31.4167, -64.1833] },
+      { "nombre": "Manzana Jesuítica", "coords": [-31.4180, -64.1856] },
+      { "nombre": "Parque Sarmiento", "coords": [-31.4297, -64.1816] }
+    ]
+  }
+]

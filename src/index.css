@@ -1,0 +1,65 @@
+@import url('./css/footer.css');
+@import url('./css/main.css');
+@import url('./css/header.css');
+@import url('./css/popup.css');
+@import url('./css/modal.css');
+
+
+.header-coyuntura {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+  
+    left: 50%;
+    transform: translateX(-50%); /* centers horizontally */
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  
+
+.header-coyuntura__nav{
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.footer-coyuntura__footer-links, .footer-coyuntura__footer-links{
+    display: block;
+    pointer-events: auto;
+    z-index: 6;
+}
+
+  .header-coyuntura__nav-img-mobile{
+    display: none;
+  }
+  
+  @media (max-width: 1023.98px) {
+    .section-contenedor {
+      max-width: 100dvw;
+    }
+  
+    .footer-prueba {
+      width: 100dvw;
+    }
+
+    .header-coyuntura{
+      width: 100%;
+      padding: 10px 1rem;
+    }
+    
+    .header-coyuntura__nav-img-deskopt, .footer-coyuntura__footer-links{
+      display: none;
+    }
+
+    .header-coyuntura__nav-img-mobile{
+      display: block;
+      pointer-events: auto;
+      z-index: 6;
+    }
+  }

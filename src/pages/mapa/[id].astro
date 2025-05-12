@@ -1,0 +1,30 @@
+---
+// Import necessary components and data
+import { MapaFooter } from 'component/mapa/mapaFooter';
+import { Mapa } from 'component/mapa';
+import proyectosData from 'data/proyectos.json';
+import Layout from 'pages/layout/Layout.astro';
+
+// Get the dynamic `id` from the URL to find the corresponding project
+const { id } = Astro.params;  
+
+// Find the current project based on the ID
+const proyecto = proyectosData.find((proyecto) => proyecto.id === parseInt(id));
+
+// If project is not found, throw an error
+if (!proyecto) {
+  throw new Error(`Proyecto con ID ${id} no encontrado`);
+}
+
+// Define getStaticPaths function for dynamic routing
+export function getStaticPaths() {
+  return proyectosData.map((proyecto) => ({
+    params: { id: proyecto.id.toString() },  // Generate paths like /proyecto/1, /proyecto/2, etc.
+  }));
+}
+---
+
+<Layout title={proyecto.nombre}>
+  {/* Pass the proyecto data to the Mapa component */}
+  <Mapa proyecto={proyecto} client:only="react" />
+</Layout>

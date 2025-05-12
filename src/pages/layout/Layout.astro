@@ -3,7 +3,6 @@ interface Props {
 	title: string;
 }
 const { title } = Astro.props;
-import Header from 'component/header';
 ---
 
 <!doctype html>
@@ -38,9 +37,7 @@ import Header from 'component/header';
             <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/poncho.min.css" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/documentacion.css" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/gh/argob/poncho@master/dist/css/icono-arg.css" rel="stylesheet">
-
-            <link lang="sass" rel="stylesheet" href="../../sass/index.sass">
-            <style lang="sass"></style>
+            <link rel="stylesheet" href="../src/index.css">
             <meta name="generator" content={Astro.generator} />
             <title>{title}</title>
     </head>
